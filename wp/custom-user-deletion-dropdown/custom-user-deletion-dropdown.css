@@ -1,0 +1,23 @@
+/* Increase the width of the Select2 container */
+.select2-container--default .select2-selection--single {
+    width: 300px; /* Adjust as needed */
+    height: 40px; /* Adjust height for larger textbox */
+    font-size: 16px; /* Increase font size */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Add border radius */
+}
+
+/* Increase the width of the Select2 dropdown */
+.custom-select2-dropdown .select2-dropdown {
+    width: 300px !important; /* Match the width of the container */
+}
+
+/* Custom styles for the Select2 dropdown */
+.custom-select2-dropdown .select2-results__option {
+    padding: 8px;
+    border-bottom: 1px solid #eaeaea;
+}
+.custom-select2-dropdown .select2-results__option--highlighted {
+    background-color: #f0f0f0;
+}
+

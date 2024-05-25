@@ -1,0 +1,156 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+#notes-container {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.note {
+    padding: 10px;
+    border-radius: 5px;
+    width: 400px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+    background-color: #727272;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    transition: box-shadow 0.3s ease;
+}
+
+.note:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.note h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.note-description {
+    margin: 0 0 10px;
+    white-space: pre-wrap;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.note button {
+    align-self: flex-end;
+    margin-right: 5px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.note button:hover {
+    background: #0056b3;
+}
+
+#new-note-heading, #new-note-description {
+    width: 100%;
+    margin-bottom: 10px;
+    background: #444;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.color-picker {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+button#add-note {
+    margin-top: 10px;
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button#add-note:hover {
+    background: #555;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #444;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#edit-note-heading, #edit-note-description {
+    width: 100%;
+    margin-bottom: 10px;
+    background: #555;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#edit-note-color {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+button#save-note {
+    margin-top: 10px;
+    background: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button#save-note:hover {
+    background: #666;
+}
